@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include<p18f4580.h>
 
 #define LCD PORTC
 #define EN PORTDbits.RD0
@@ -14,7 +14,6 @@ void write(const rom char* str);
 
 int main()
 {
-
     TRISC = 0x00; 
     TRISDbits.RD0 = 0;
     TRISDbits.RD1 = 0;
